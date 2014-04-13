@@ -1,0 +1,26 @@
+{
+  "name": "geci",
+  "version": "0.0.1",
+  "description": "fetch lrc data from APIs which provied by geci.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turingou/geci.git"
+  },
+  "keywords": [
+    "geci",
+    "lrc"
+  ],
+  "author": "turing <o.u.turing@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turingou/geci/issues"
+  },
+  "homepage": "https://github.com/turingou/geci",
+  "dependencies": {
+    "request": "*"
+  }
+}
