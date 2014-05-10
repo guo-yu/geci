@@ -1,6 +1,6 @@
 {
   "name": "geci",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "fetch lrc data from APIs which provied by geci.me",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/turingou/geci",
   "dependencies": {
-    "request": "*"
+    "request": "*",
+    "lrc": "~0.1.0"
   }
 }

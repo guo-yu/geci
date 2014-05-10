@@ -4,13 +4,22 @@ fetch lrc data from APIs which provied by geci.me
 
 ### Installation
 ````
-$ [sudo] npm install geci
+$ npm install geci
 ````
-
 
 ### Example
 ````javascript
 var geci = require('geci');
+
+geci.fetch({
+  title: 'some title',
+  artist: 'JJX'
+}, function(err, lrc) {
+  if (err) return;
+  geci.print(lrc, functio(line, extra) {
+    console.log(line);
+  });
+})
 ````
 
 ### API
