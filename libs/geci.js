@@ -16,7 +16,7 @@ exports.fetch = function(song, callback) {
   var title = song.title;
   var artist = song.artist;
   if (!title || !artist) return callback(new Error(errors.nf));
-  request.get('http://geci.me/api/lyric/' + title + '/' + artist, function(err, res, songs) {
+  request.get({url:'http://geci.me/api/lyric/' + title + '/' + artist, json:true}, function(err, res, songs) {
     if (err) return callback(err);
     var code = res.statusCode;
     if (code !== 200) return callback(new Error(code));
@@ -34,3 +34,4 @@ exports.fetch = function(song, callback) {
     });
   });
 }
+
